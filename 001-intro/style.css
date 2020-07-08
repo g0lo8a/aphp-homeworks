@@ -1,0 +1,32 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 40px;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table tr:nth-child(2n) {
+    background-color: #e3e3e3;
+}
+
+table th, html table td {
+    border: 1px solid;
+    padding: 7px;
+    font-weight: 400;
+}
+
+table td {
+    font-weight: 300;
+}
