@@ -50,6 +50,7 @@ $tv3 = new \Paraphernalia\Tv('QLED The Serif TV 2020', '55"', 114990);
         <?php
         echo $student1->showInfo();
         echo $student2->showInfo();
+        $student3->changeCourse('New course');
         echo $student3->showInfo();
         ?>
         </tbody>
@@ -83,9 +84,9 @@ $tv3 = new \Paraphernalia\Tv('QLED The Serif TV 2020', '55"', 114990);
             <th>Марка</th>
             <th>Диагональ</th>
             <th>Цена ₽</th>
-            <th>Цена со скидкой ₽</th>
         </tr>
         <?php
+        $tv1->changePrice(25000);
         echo $tv1->showInfo();
         echo $tv2->showInfo();
         echo $tv3->showInfo();
