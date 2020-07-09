@@ -34,8 +34,8 @@ class Car
         );
     }
 
-    public function changeColor(string $color)
+    public function changeColor(string $color): string
     {
-        $this->color = $color;
+        return $this->color = $color;
     }
 }

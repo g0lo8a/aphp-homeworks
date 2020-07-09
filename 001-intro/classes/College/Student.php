@@ -39,4 +39,9 @@ class Student
              </tr>"
         );
     }
+
+    public function changeCourse(string $newCourse): string
+    {
+        return $this->course = $newCourse;
+    }
 }

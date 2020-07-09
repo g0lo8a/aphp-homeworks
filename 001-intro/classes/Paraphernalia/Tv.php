@@ -8,9 +8,10 @@ class Tv
 {
     public string $model;
     public string $diagonal;
-    public string $price;
+    public int $price;
+    public static $discount;
 
-    public function __construct(string $model, string $diagonal, string $price)
+    public function __construct(string $model, string $diagonal, int $price)
     {
         $this->model = $model;
         $this->diagonal = $diagonal;
@@ -24,12 +25,13 @@ class Tv
              <td>$this->model</td>
              <td>$this->diagonal</td>
              <td>$this->price</td>
+             <td>$this->price</td>
              </tr>"
         );
     }
 
-    public function giveDiscount()
+    public static function giveDiscount(int $discount): int
     {
-
+        return self::$discount = $discount;
     }
 }

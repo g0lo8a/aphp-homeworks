@@ -15,9 +15,9 @@ $student3 = new \College\Student('Gans', 'Muller', 'Автодело', 'Builder'
 $car1 = new \Garage\Car('Mercedes-Benz E-Class', 'Grey', 'Coupe', 'petrol 2,0', 65000);
 $car2 = new \Garage\Car('BMW', 'Black', 'Sedan', 'petrol 3,0', 85000);
 $car3 = new \Garage\Car('Moskvich', 'Orange', 'Combi', 'petrol 1,3', 95);
-$tv1 = new \Paraphernalia\Tv('Crystal UHD 4K Smart TV TU8000 Series 8', '82"', '199 990');
-$tv2 = new \Paraphernalia\Tv('Q77T 4K Smart QLED TV 2020', '75"', '199 900');
-$tv3 = new \Paraphernalia\Tv('QLED The Serif TV 2020', '55"', '114 990');
+$tv1 = new \Paraphernalia\Tv('Crystal UHD 4K Smart TV TU8000 Series 8', '82"', 199990);
+$tv2 = new \Paraphernalia\Tv('Q77T 4K Smart QLED TV 2020', '75"', 199900);
+$tv3 = new \Paraphernalia\Tv('QLED The Serif TV 2020', '55"', 114990);
 ?>
 
 <!doctype html>
@@ -83,6 +83,7 @@ $tv3 = new \Paraphernalia\Tv('QLED The Serif TV 2020', '55"', '114 990');
             <th>Марка</th>
             <th>Диагональ</th>
             <th>Цена ₽</th>
+            <th>Цена со скидкой ₽</th>
         </tr>
         <?php
         echo $tv1->showInfo();
