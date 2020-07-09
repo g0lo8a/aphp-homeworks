@@ -1,14 +1,20 @@
 <?php
 declare(strict_types=1);
-require_once 'classes/College/Student.php';
-require_once 'classes/Garage/Car.php';
-require_once 'classes/Paraphernalia/Tv.php';
+
+
+function my_autoload($className)
+{
+    require_once __DIR__ . '/classes/' . str_replace('\\', '/', $className) . '.php';
+}
+
+spl_autoload_register("my_autoload");
+
 $student1 = new \College\Student('Sam', 'White', 'Programing', 'Web-dev', 'aphp-1', 'SPB', '322-223-22-33');
 $student2 = new \College\Student('Kuvalda', 'Molotov', 'Kuznya', 'Tydysch', 'Ruchka_molota', 'Kuzneck', '893475983');
 $student3 = new \College\Student('Gans', 'Muller', 'Автодело', 'Builder', 'Riveting Buckets', 'Zurich', '29698457805');
-$car1 = new \Garage\Car('Mercedes-Benz E-Class', 'Grey','Coupe', 'petrol 2,0', 65000);
-$car2 = new \Garage\Car('BMW', 'Black','Sedan', 'petrol 3,0', 85000);
-$car3 = new \Garage\Car('Moskvich', 'Orange','Combi', 'petrol 1,3', 95);
+$car1 = new \Garage\Car('Mercedes-Benz E-Class', 'Grey', 'Coupe', 'petrol 2,0', 65000);
+$car2 = new \Garage\Car('BMW', 'Black', 'Sedan', 'petrol 3,0', 85000);
+$car3 = new \Garage\Car('Moskvich', 'Orange', 'Combi', 'petrol 1,3', 95);
 $tv1 = new \Paraphernalia\Tv('Crystal UHD 4K Smart TV TU8000 Series 8', '82"', '199 990');
 $tv2 = new \Paraphernalia\Tv('Q77T 4K Smart QLED TV 2020', '75"', '199 900');
 $tv3 = new \Paraphernalia\Tv('QLED The Serif TV 2020', '55"', '114 990');
