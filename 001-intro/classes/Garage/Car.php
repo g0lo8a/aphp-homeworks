@@ -24,13 +24,13 @@ class Car
     public function showInfo(): string
     {
         return (
-        "<tr>
+        "<traits>
              <td>$this->name</td>
              <td>$this->color</td>
              <td>$this->body</td>
              <td>$this->engine</td>
              <td>$this->price</td>
-             </tr>"
+             </traits>"
         );
     }
 

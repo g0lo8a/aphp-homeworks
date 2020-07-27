@@ -28,7 +28,7 @@ class Student
     public function showInfo():string
     {
         return (
-            "<tr>
+            "<traits>
              <td>$this->name</td>
              <td>$this->lastName</td>
              <td>$this->faculty</td>
@@ -36,7 +36,7 @@ class Student
              <td>$this->course</td>
              <td>$this->address</td>
              <td>$this->phoneNumber</td>
-             </tr>"
+             </traits>"
         );
     }
 

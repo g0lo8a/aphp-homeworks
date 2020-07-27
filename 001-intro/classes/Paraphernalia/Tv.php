@@ -20,11 +20,11 @@ class Tv
     public function showInfo(): string
     {
         return (
-        "<tr>
+        "<traits>
              <td>$this->model</td>
              <td>$this->diagonal</td>
              <td>$this->price</td>
-             </tr>"
+             </traits>"
         );
     }
 
